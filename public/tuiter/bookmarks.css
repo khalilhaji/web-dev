@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-bookmarks-header {
+  margin-top: 12px;
+  margin-right: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid lightgray;
+}
+.wd-title {
+  color: white;
+  font-size: 20px;
+}
+
+.wd-bookmarks-header p {
+  color: lightgray;
+  font-size: 13px;
+}
+
+.wd-tweet {
+  margin-left: 16px;
+  margin-top: 12px;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+.wd-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+}
+
+.wd-author {
+  color: white;
+  font-size: 15px;
+}
+
+.wd-username {
+  color: lightgray;
+}
+
+.wd-tweet-body {
+  color: white;
+  font-size: 15px;
+  max-width: 506px;
+  margin-right: 16px;
+  margin-bottom: 12px;
+}
+
+.wd-tweet-content {
+  margin-left: 12px;
+}
+
+.wd-tweet-image {
+  width: 504px;
+  height: 264px;
+}
+
+.wd-image-caption {
+  margin-top: 0px;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  padding: 12px 0 0px 0px;
+  margin-bottom: 0px;
+  max-width: 492px;
+}
+
+.wd-image-text {
+  color: lightgray;
+  font-size: 15px;
+  padding: 0px 0 12px 0px;
+  margin-top: 0px;
+  max-width: 492px;
+}
+.wd-tweet-link {
+  border: 1px solid lightgray;
+  padding: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wd-icons {
+  color: lightgray;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.wd-icons a {
+  color: lightgray;
+  text-decoration: none;
+}
+.wd-icons i {
+  margin-right: 4px;
+}
