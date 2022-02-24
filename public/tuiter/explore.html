@@ -1,98 +1,342 @@
 <head>
   <link
-    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     rel="stylesheet"
   />
   <link href="explore.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="wd-search">
-    <input placeholder="Search Tuiter" class="wd-search-tuiter" />
-    <a href="href=explore-settings.html"
-      ><i class="fas fa-cog wd-search-gear"></i
-    ></a>
-  </div>
+  <div class="row mt-1">
+    <div
+      class="col-xxl-2 col-xl-2 col-lg-2 col-md col-sm offset-xxl-2 offset-xl-2"
+    >
+      <ul class="list-group">
+        <li class="list-group-item">
+          <i class="fab fa-twitter"></i>
+        </li>
+        <a class="list-group-item-action list-group-item" href="/home.html"
+          ><i class="fas fa-home"></i>
+          <span class="d-none d-xxl-inline d-xl-inline">Home</span></a
+        >
+        <a class="list-group-item active list-group-item-action" href="#">
+          <i class="fas fa-hashtag"></i>
+          <span class="d-none d-xxl-inline d-xl-inline">Explore</span>
+        </a>
 
-  <div class="wd-links">
-    <a href="for-you.html" class="wd-link wd-link-active">For You</a>
-    <a href="trending.html" class="wd-link">Trending</a>
-    <a href="covid19.html" class="wd-link">COVID-19</a>
-    <a href="news.html" class="wd-link">News</a>
-    <a href="sports.html" class="wd-link">Sports</a>
-    <a href="entertainment.html" class="wd-link">Entertainment</a>
-  </div>
-
-  <div class="wd-suggested-posts">
-    <div class="wd-post">
-      <div>
-        <p class="wd-post-topic">
-          Lorem ipsum dolor sit amet, consectetur
-          <a class="wd-post-settings">...</a>
-        </p>
-        <p class="wd-post-title">Lorem</p>
-        <p class="wd-post-topic">55.5K Tweets</p>
-      </div>
+        <a
+          class="list-group-item list-group-item-action"
+          href="./notifications.html"
+        >
+          <i class="fas fa-bell"></i>
+          <span class="d-none d-xxl-inline d-xl-inline">Notifications</span>
+        </a>
+        <a
+          class="list-group-item list-group-item-action"
+          href="./messages.html"
+        >
+          <i class="fas fa-envelope"></i>
+          <span class="d-none d-xxl-inline d-xl-inline">Messages</span>
+        </a>
+        <a
+          class="list-group-item list-group-item-action"
+          href="./bookmarks.html"
+        >
+          <i class="fas fa-bookmark"></i>
+          <span class="d-none d-xxl-inline d-xl-inline">Bookmarks</span>
+        </a>
+        <a class="list-group-item list-group-item-action" href="./lists.html"
+          ><i class="fas fa-list"></i>
+          <span class="d-none d-xxl-inline d-xl-inline">Lists</span></a
+        >
+        <a class="list-group-item list-group-item-action" href="./profile.html"
+          ><i class="fas fa-user"></i>
+          <span class="d-none d-xxl-inline d-xl-inline">Profile</span></a
+        >
+        <a class="list-group-item list-group-item-action" href="./more.html"
+          ><i class="fas fa-ellipsis-h"></i>
+          <span class="d-none d-xxl-inline d-xl-inline">More</span></a
+        >
+      </ul>
     </div>
-    <div class="wd-post">
-      <div>
-        <p class="wd-post-topic">
-          Lorem ipsum dolor sit amet, consectetur
-          <a class="wd-post-settings">...</a>
-        </p>
-        <p class="wd-post-title">ipsum</p>
-        <p class="wd-post-topic">5,128 Tweets</p>
-      </div>
-    </div>
-    <div class="wd-post-with-image">
-      <div>
-        <p class="wd-post-author">
-          The New York Times <i class="far fa-check-circle"></i>
-          <a class="wd-post-settings">...</a>
-        </p>
-        <p class="wd-post-title">Lorem ipsum dolor sit amet, consectetur</p>
-        <span class="wd-post-topic">55.5K Tweets</span>
-      </div>
-
-      <img src="bootstrap.jpg" class="wd-post-image" />
-    </div>
-
-    <div class="wd-post-with-image">
-      <div>
-        <p class="wd-post-author">
-          sed do eiusmod<i class="far fa-check-circle"></i>
-          <a class="wd-post-settings">...</a>
-        </p>
-        <p class="wd-post-title">Lorem ipsum dolor sit amet, consectetur</p>
-        <span class="wd-post-topic">55.5K Tweets</span>
-      </div>
-
-      <img src="bootstrap.jpg" class="wd-post-image" />
-    </div>
-
-    <div class="wd-post-with-image">
-      <div>
-        <p class="wd-post-topic">
-          The New York Times
-          <a class="wd-post-settings">...</a>
-        </p>
-        <p class="wd-post-title">Lorem ipsum dolor sit amet, consectetur</p>
-        <span class="wd-post-topic">55.5K Tweets</span>
+    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md col-sm">
+      <div class="row">
+        <div class="col-10">
+          <input
+            type="text"
+            class="form-group form-input rounded-pill"
+            style="width: 100%; font-family: Arial, FontAwesome"
+            placeholder="&#xf002; Search Tuiter"
+          />
+        </div>
+        <div class="col-2">
+          <i class="fa fa-cog fa-2x"></i>
+        </div>
       </div>
 
-      <img src="bootstrap.jpg" class="wd-post-image" />
-    </div>
-
-    <div class="wd-post-with-image">
-      <div>
-        <p class="wd-post-topic">
-          Lorem ipsum
-          <a class="wd-post-settings">...</a>
-        </p>
-        <p class="wd-post-title">Lorem ipsum dolor sit amet, consectetur</p>
-        <span class="wd-post-topic">55.5K Tweets</span>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">For You</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Entertainment</a>
+        </li>
+      </ul>
+      <div class="card">
+        <img
+          src="images/ship.jpeg"
+          class="img-fluid card-img"
+          style="width: 100%"
+        />
+        <div class="card-img-overlay">
+          <h2 style="color: white; bottom: 0; position: absolute">
+            SpaceX's Spaceship
+          </h2>
+        </div>
       </div>
 
-      <img src="bootstrap.jpg" class="wd-post-image" />
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-10">
+              <p style="color: gray">Web Development</p>
+              <p>
+                <strong>React.js</strong> <i class="fas fa-check-circle"></i> -
+                2h
+              </p>
+              <p>
+                <strong>
+                  React.js is a component bases front end library that makes it
+                  very easy to build Single Page Applications or SPAs
+                </strong>
+              </p>
+            </div>
+            <div class="col-2">
+              <img
+                src="images/ma.jpeg"
+                class="img-fluid"
+                style="height: 100%; width: 100%"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-10">
+              <p style="color: gray">Web Development</p>
+              <p>
+                <strong>React.js</strong> <i class="fas fa-check-circle"></i> -
+                2h
+              </p>
+              <p>
+                <strong>
+                  React.js is a component bases front end library that makes it
+                  very easy to build Single Page Applications or SPAs
+                </strong>
+              </p>
+            </div>
+            <div class="col-2">
+              <img
+                src="images/ma.jpeg"
+                class="img-fluid"
+                style="height: 100%; width: 100%"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-10">
+              <p style="color: gray">Web Development</p>
+              <p>
+                <strong>React.js</strong> <i class="fas fa-check-circle"></i> -
+                2h
+              </p>
+              <p>
+                <strong>
+                  React.js is a component bases front end library that makes it
+                  very easy to build Single Page Applications or SPAs
+                </strong>
+              </p>
+            </div>
+            <div class="col-2">
+              <img
+                src="images/ma.jpeg"
+                class="img-fluid"
+                style="height: 100%; width: 100%"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-10">
+              <p style="color: gray">Web Development</p>
+              <p>
+                <strong>React.js</strong> <i class="fas fa-check-circle"></i> -
+                2h
+              </p>
+              <p>
+                <strong>
+                  React.js is a component bases front end library that makes it
+                  very easy to build Single Page Applications or SPAs
+                </strong>
+              </p>
+            </div>
+            <div class="col-2">
+              <img
+                src="images/ma.jpeg"
+                class="img-fluid"
+                style="height: 100%; width: 100%"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-10">
+              <p style="color: gray">Web Development</p>
+              <p>
+                <strong>React.js</strong> <i class="fas fa-check-circle"></i> -
+                2h
+              </p>
+              <p>
+                <strong>
+                  React.js is a component bases front end library that makes it
+                  very easy to build Single Page Applications or SPAs
+                </strong>
+              </p>
+            </div>
+            <div class="col-2">
+              <img
+                src="images/ma.jpeg"
+                class="img-fluid"
+                style="height: 100%; width: 100%"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
+    <div
+      class="d-none d-xxl-block d-xl-block d-lg-block col-xxl col-xl col-lg-4"
+    >
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Who to follow?</strong></li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="col-2">
+              <img
+                src="./images/java.png"
+                style="border-radius: 50%"
+                class="img-fluid img"
+              />
+            </div>
+            <div class="col-7">
+              <p style="white-space: nowrap">
+                Java <i class="fas fa-check-circle"></i>
+              </p>
+              <p>@java</p>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary">Follow</button>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="col-2">
+              <img
+                src="./images/relativity.jpeg"
+                style="border-radius: 50%"
+                class="img-fluid img"
+              />
+            </div>
+            <div class="col-7">
+              <p style="white-space: nowrap">
+                Relativity Space <i class="fas fa-check-circle"></i>
+              </p>
+              <p>@relativityspace</p>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary">Follow</button>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="col-2">
+              <img
+                src="./images/virgin.jpeg "
+                style="border-radius: 50%"
+                class="img-fluid img"
+              />
+            </div>
+            <div class="col-7">
+              <p style="white-space: nowrap">
+                Virgin Galactic <i class="fas fa-check-circle"></i>
+              </p>
+              <p>@virgingalactic</p>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary">Follow</button>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="col-2">
+              <img
+                src="./images/nasa.jpeg"
+                style="border-radius: 50%"
+                class="img-fluid img"
+              />
+            </div>
+            <div class="col-7">
+              <p style="white-space: nowrap">
+                NASA <i class="fas fa-check-circle"></i>
+              </p>
+              <p>@NASA</p>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary">Follow</button>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="col-2">
+              <img
+                src="./images/tesla.png"
+                style="border-radius: 50%"
+                class="img-fluid img"
+              />
+            </div>
+            <div class="col-7">
+              <p style="white-space: nowrap">
+                Tesla <i class="fas fa-check-circle"></i>
+              </p>
+              <p>@Tesla</p>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary">Follow</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-xxl col-xl"></div>
   </div>
 </body>
