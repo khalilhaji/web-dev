@@ -22,27 +22,27 @@ const ExploreComponent = () => {
       </div>
       <ul className="nav mb-2 nav-tabs">
         <li className="nav-item">
-          <a className="nav-link active" href="#">
+          <a className="nav-link active" href="#/">
             For You
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#/">
             Trending
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#/">
             News
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#/">
             Sports
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#/">
             Entertainment
           </a>
         </li>
@@ -52,6 +52,7 @@ const ExploreComponent = () => {
           src="images/ship.jpeg"
           className="img-fluid card-img"
           style={{ width: "100%" }}
+          alt="foo"
         />
         <div className="card-img-overlay">
           <h2 style={{ color: "white", bottom: 0, position: "absolute" }}>

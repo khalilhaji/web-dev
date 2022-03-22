@@ -33,6 +33,7 @@ const SummaryItem = ({
             src={post.image}
             className="img-fluid"
             style={{ height: "100%", width: "100%" }}
+            alt="foo"
           />
         </div>
       </div>
