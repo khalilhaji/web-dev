@@ -1,3 +1,4 @@
+import ReduxExamples from "./redux-examples";
 import React from "react";
 import Classes from "./classes";
 import Styles from "./styles";
@@ -14,6 +15,7 @@ const Labs = () => {
       <ConditionalOutput />
       <Styles />
       <Classes />
+      <ReduxExamples />
     </div>
   );
 };
