@@ -19,6 +19,7 @@ const WhatsHappening = () => {
               src={"../../images/garfield.jpeg"}
               className="rounded-circle"
               style={{ width: "48px", margin: "16px" }}
+              alt="foo"
             />
           </td>
           <td style={{ width: "100%" }}>
@@ -37,16 +38,16 @@ const WhatsHappening = () => {
             ></textarea>
             <hr />
             <span>
-              <a href="#">
+              <a href="#/">
                 <i className="far fa-image me-3"></i>
               </a>
-              <a href="#">
+              <a href="#/">
                 <i className="far fa-analytics me-3"></i>
               </a>
-              <a href="#">
+              <a href="#/">
                 <i className="far fa-smile me-3"></i>
               </a>
-              <a href="#">
+              <a href="#/">
                 <i className="far fa-calendar me-3"></i>
               </a>
             </span>

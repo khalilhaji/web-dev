@@ -18,6 +18,7 @@ const TuitListItem = ({ tuit }) => {
               <img
                 className="rounded-circle wd-avatar-image"
                 src={tuit["logo-image"]}
+                alt="foo"
               />
             </td>
             <td className="ps-3" style={{ width: "100%" }}>
@@ -35,6 +36,7 @@ const TuitListItem = ({ tuit }) => {
                   src={tuit.attachments.image}
                   className="mt-2 wd-border-radius-20px"
                   style={{ width: "100%" }}
+                  alt="foo"
                 />
               )}
               {tuit.attachments && tuit.attachments.video && (
