@@ -4,9 +4,6 @@ import { updateTuit } from "../actions/tuit-actions";
 
 const TuitStats = ({ tuit }) => {
   const dispatch = useDispatch();
-  const likeClickHandler = () => {
-    dispatch({ type: "like-tuit", tuit });
-  };
   return (
     <div className="row mt-2">
       <div className="col">
