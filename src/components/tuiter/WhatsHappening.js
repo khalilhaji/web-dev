@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { createTuit } from "./actions/tuit-actions";
 
 const WhatsHappening = () => {
-  let [whatsHappening, setWhatsHappening] = useState("");
+  let [whatsHappening, setNewTuit] = useState({
+    tuit: "",
+    postedBy: { username: "khalil" },
+    handle: "khalil",
+  });
   const dispatch = useDispatch();
-  const tuitClickHandler = () => {
-    dispatch({
-      type: "create-tuit",
-      tuit: whatsHappening,
-    });
-  };
   return (
     <table style={{ marginBottom: "16px" }}>
       <tbody>
@@ -24,8 +23,10 @@ const WhatsHappening = () => {
           </td>
           <td style={{ width: "100%" }}>
             <textarea
-              value={whatsHappening}
-              onChange={(event) => setWhatsHappening(event.target.value)}
+              value={whatsHappening.tuit}
+              onChange={(event) =>
+                setNewTuit({ ...whatsHappening, tuit: event.target.value })
+              }
               className="form-control"
               style={{
                 width: "100%",
@@ -52,7 +53,7 @@ const WhatsHappening = () => {
               </a>
             </span>
             <button
-              onClick={tuitClickHandler}
+              onClick={() => createTuit(dispatch, whatsHappening)}
               className="btn btn-primary fa-pull-right rounded-pill"
             >
               Tuit

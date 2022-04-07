@@ -1,14 +1,11 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { deleteTuit } from "../actions/tuit-actions";
 import "./tuit.css";
 import TuitStats from "./TuitStats";
 
 const TuitListItem = ({ tuit }) => {
   const dispatch = useDispatch();
-  const deleteTuitClickHandler = () => {
-    dispatch({ type: "delete-tuit", tuit });
-  };
-
   return (
     <li className="list-group-item">
       <table>
@@ -17,13 +14,13 @@ const TuitListItem = ({ tuit }) => {
             <td className="align-text-top">
               <img
                 className="rounded-circle wd-avatar-image"
-                src={tuit["logo-image"]}
+                src={tuit["logoImage"]}
                 alt="foo"
               />
             </td>
             <td className="ps-3" style={{ width: "100%" }}>
               <i
-                onClick={deleteTuitClickHandler}
+                onClick={() => deleteTuit(dispatch, tuit)}
                 className="fa fa-times fa-pull-right"
                 style={{ color: "white" }}
               ></i>
