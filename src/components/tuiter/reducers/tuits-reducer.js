@@ -22,10 +22,10 @@ const tuitsReducer = (state = [], action) => {
         if (tuit._id === action.tuit._id) {
           if (tuit.liked === true) {
             tuit.liked = false;
-            tuit.stats.likes--;
+            tuit.likes--;
           } else {
             tuit.liked = true;
-            tuit.stats.likes++;
+            tuit.likes++;
           }
           return tuit;
         } else {
@@ -41,11 +41,10 @@ const tuitsReducer = (state = [], action) => {
         postedBy: {
           username: "ReactJS",
         },
-        stats: {
-          retuits: 111,
-          likes: 222,
-          replies: 333,
-        },
+        likes: 0,
+        dislikes: 0,
+        liked: false,
+        disliked: false,
       };
       return [newTuit, ...state];
     default:

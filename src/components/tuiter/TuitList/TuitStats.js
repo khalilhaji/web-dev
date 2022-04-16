@@ -7,22 +7,17 @@ const TuitStats = ({ tuit }) => {
   return (
     <div className="row mt-2">
       <div className="col">
-        <i className="far fa-comment me-2"></i>
-        {tuit.stats.comments}
+        <i className="far fa-comment me-2"></i>0
       </div>
       <div className="col">
-        <i className="fas fa-retweet me-2"></i>
-        {tuit.stats.retuits}
+        <i className="fas fa-retweet me-2"></i>0
       </div>
       <div
         className="col"
         onClick={() =>
           updateTuit(dispatch, {
             ...tuit,
-            stats: {
-              ...tuit.stats,
-              likes: tuit.stats.likes + (tuit.liked ? -1 : 1),
-            },
+            likes: tuit.likes + (tuit.liked ? -1 : 1),
             liked: !tuit.liked,
           })
         }
@@ -34,7 +29,7 @@ const TuitStats = ({ tuit }) => {
           ></i>
         )}
         {!tuit.liked && <i className="far fa-heart me-2"></i>}
-        {tuit.stats.likes}
+        {tuit.likes}
       </div>
 
       <div
@@ -42,10 +37,7 @@ const TuitStats = ({ tuit }) => {
         onClick={() =>
           updateTuit(dispatch, {
             ...tuit,
-            stats: {
-              ...tuit.stats,
-              dislikes: tuit.stats.dislikes + (tuit.disliked ? -1 : 1),
-            },
+            dislikes: tuit.dislikes + (tuit.disliked ? -1 : 1),
             disliked: !tuit.disliked,
           })
         }
@@ -57,7 +49,7 @@ const TuitStats = ({ tuit }) => {
           ></i>
         )}
         {!tuit.disliked && <i className="far fa-thumbs-down me-2"></i>}
-        {tuit.stats.dislikes}
+        {tuit.dislikes}
       </div>
       <div className="col">
         <i className="fas fa-external-link-alt me-2"></i>

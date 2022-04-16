@@ -53,7 +53,14 @@ const WhatsHappening = () => {
               </a>
             </span>
             <button
-              onClick={() => createTuit(dispatch, whatsHappening)}
+              onClick={() => {
+                createTuit(dispatch, whatsHappening);
+                setNewTuit({
+                  tuit: "",
+                  postedBy: { username: "khalil" },
+                  handle: "khalil",
+                });
+              }}
               className="btn btn-primary fa-pull-right rounded-pill"
             >
               Tuit
